@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>grid-test</title>
+  <style>
+  /* justify-items: start | end | center | stretch; 设置单元格内容的水平位置（
+  align-items: start | end | center | stretch;  设置单元格内容的垂直位置*/
+  /* place-items: <align-items> <justify-items>; 设置单元格的水平垂直距离
+   
+   设置整体内容的 
+  水平距离 
+  justify-content: start | end | center | stretch | space-around | space-between | space-evenly;
+   垂直距离
+  align-content: start | end | center | stretch | space-around | space-between | space-evenly; 
+ 水平垂直距离 */
+  /* place-content: <align-content> <justify-content> 
+  space-between - 单元格与单元格的间隔相等，单元格与容器边框之间没有间隔。 
+  space-evenly - 单元格与单元格的间隔相等，单元格与容器边框之间也是同样长度的间隔。 */
+
+    .grid-container{
+      display: grid;
+      grid-template-columns: 150px 50px 50px;
+      grid-template-rows: 50px 50px 50px;
+      place-content: space-around space-evenly;
+      place-items: end stretch;
+
+    }
+  .item {
+    /* text-align: center; */
+    border: 1px solid #eee;
+    color: gray;
+}
+  .item .cla{
+    width: 100px;
+    height:20px;
+    }
+.item-1{
+  background:rgba(255, 0, 0);
+}
+.item-2{
+  background:rgba(255, 165, 0);
+}
+.item-3{
+  background:rgba(255, 255, 0);
+}
+.item-4{
+  background:rgba(0, 255, 0);
+}
+.item-5{
+  background:rgba(0, 127, 255);
+}
+.item-6{
+  background:rgba(0, 0, 255 );
+}
+.item-7{
+  background:rgba(139, 0, 255);
+}
+.item-8{
+  background:rgba(255, 255, 135);
+}
+.item-9{
+  background:rgba(0, 0, 0);
+}
+
+
+  </style>
+    
+</head>
+<body>
+  <div class="grid-container">
+   <div class="item item-1">
+     <div class="cla">
+       hahhahha
+     </div>
+   </div>
+   <div class="item item-2">2</div>
+   <div class="item item-3">3</div>
+   <div class="item item-4">4</div>
+   <div class="item item-5">5</div>
+   <div class="item item-6">6</div>
+   <div class="item item-7">7</div>
+   <div class="item item-8">8</div>
+   <div class="item item-9">9</div>
+  </div>
+  
+</body>
+</html>
