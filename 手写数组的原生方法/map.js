@@ -41,7 +41,7 @@ console.log(filter(allArr,(item)=>item>2))
 
 // reduce 方法
 
-function reduce(arr,callback,initValue) {
+function reduce(argitr,callback,initValue) {
   let flag = !Array.isArray(arr) || !arr.length || typeof callback !=='function'
    if(flag){
      return []
